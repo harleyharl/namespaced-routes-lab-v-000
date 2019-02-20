@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   namespace :admin do
     resources :preferences, only: [:index]
+    resources :artists, only: [:new]
   end
 
   resources :songs
